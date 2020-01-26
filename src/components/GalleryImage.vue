@@ -24,7 +24,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  img {
-    max-width: 50vw;
+  .gallery-image {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 350px;
+      height: 100%;
+    }
   }
 </style>
