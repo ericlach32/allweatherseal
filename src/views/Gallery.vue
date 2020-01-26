@@ -16,7 +16,6 @@
 
 
 <script>
-
 import GalleryImage from '@/components/GalleryImage.vue'
 
 export default {
@@ -50,6 +49,7 @@ export default {
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     &__image {
       width: 33%;
