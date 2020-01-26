@@ -50,6 +50,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      padding: 0 1rem;
     }
     &__image {
       width: 33%;

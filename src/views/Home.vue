@@ -1,21 +1,26 @@
 <template>
   <div class="home" v-if="home_page">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="All Weather Seal"/> -->
 
-    <h1>{{ home_page.data.title[0].text }}</h1>
-    <h2>{{ home_page.data.heading[0].text }}</h2>
+    <HeroBackground
+      v-bind:title='home_page.data.title[0].text'
+      v-bind:heading='home_page.data.heading[0].text'
+      v-bind:image='home_page.data.hero_image.url'
+    />
+
     <h3>{{ home_page.data.subheading[0].text }}</h3>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import HeroBackground from '@/components/HeroBackground.vue'
 
 export default {
   name: 'home',
-  components: {},
+  components: {
+    HeroBackground
+  },
   data () {
     return {
       home_page: null

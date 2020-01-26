@@ -27,7 +27,7 @@ export default {
   .gallery-image {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 
     img {
       object-fit: cover;
@@ -36,7 +36,7 @@ export default {
       height: 100%;
 
       @media only screen and (max-width: 768px) {
-        
+
       }
     }
   }
