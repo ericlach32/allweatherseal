@@ -61,7 +61,7 @@ export default {
     }
 
     @media only screen and (max-width: 768px) {
-      min-height: 300px;
+      min-height: 350px;
     }
   }
 </style>

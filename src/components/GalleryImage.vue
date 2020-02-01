@@ -34,10 +34,10 @@ export default {
       max-width: 100%;
       max-height: 350px;
       height: 100%;
+    }
 
-      @media only screen and (max-width: 768px) {
-
-      }
+    @media only screen and (max-width: 768px) {
+      padding: 0 0 1rem;
     }
   }
 </style>

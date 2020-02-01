@@ -85,9 +85,13 @@ h1 {
   display: none;
 
   @media only screen and (max-width: 768px) {
+    position: sticky;
     display: flex;
     flex-direction: column;
+    z-index: 100;
     background: #222;
+    width: 100%;
+    top: 0;
     
     .hamburger {
       align-self: flex-start;
@@ -98,14 +102,21 @@ h1 {
     }
 
     &__links {
+      position: fixed;
       display: none;
       flex-direction: column;
+      align-items: center;
+      background: #222;
+      width: 100%;
+      margin-top: 3rem; 
 
       a {
         color: #bbb;
         font-weight: bold;
         text-decoration: none;
-        padding: 1rem 0;
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        width: fit-content;
 
         &.router-link-exact-active {
           color: #fff;
@@ -114,7 +125,7 @@ h1 {
 
       &.active {
         display: flex;
-        padding: 2rem 0;
+        padding-bottom: 3rem;
       }
     }
   }
