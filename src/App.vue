@@ -26,12 +26,20 @@ export default {
   methods: {
     showMenu() {
       document.querySelector('[data-nav-mobile]').classList.toggle('active');
-    }
+    },
+    scrollListener() {
+      window.addEventListener('scroll', () => {
+        document.querySelector('[data-nav-mobile]').classList.remove('active');
+      });
+    },
   },
   watch:{
     $route ()  {
       document.querySelector('[data-nav-mobile]').classList.remove('active');
     }
+  },
+  created() {
+    this.scrollListener();
   }
 }
 </script>

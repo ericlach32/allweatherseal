@@ -1,6 +1,6 @@
 <template>
   <div class="gallery-image">
-    <img v-bind:src="image" v-bind:alt="alt">
+    <img v-bind:src="image" v-bind:alt="alt" class="gallery-image__image">
     <div>
       <h2>{{ title }}</h2>
       <p>{{ description }}</p>
