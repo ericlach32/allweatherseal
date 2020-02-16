@@ -29,3 +29,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.contact {
+  margin-bottom: 25rem;
+}
+</style>
+
