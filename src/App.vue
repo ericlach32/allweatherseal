@@ -87,7 +87,7 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   padding: 30px;
-  background: #222;
+  background: #111;
 
   a {
     font-weight: bold;
@@ -113,7 +113,7 @@ h1 {
     display: flex;
     flex-direction: column;
     z-index: 100;
-    background: #222;
+    background: #111;
     width: 100%;
     top: 0;
     
@@ -130,7 +130,7 @@ h1 {
       display: none;
       flex-direction: column;
       align-items: center;
-      background: #222;
+      background: #111;
       width: 100%;
       margin-top: 3rem; 
 
@@ -149,7 +149,7 @@ h1 {
 
       &.active {
         display: flex;
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
       }
     }
   }

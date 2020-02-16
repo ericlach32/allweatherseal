@@ -94,6 +94,10 @@ export default {
       align-self: flex-start;
       margin: 0;
       font-size: 2rem;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 1rem;
+      }
     }
 
     p {
