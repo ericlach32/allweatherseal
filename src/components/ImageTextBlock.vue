@@ -47,11 +47,36 @@ export default {
   }
 
   &__image {   
+    position: relative;
+
     img {
       max-width: 100%;
       max-height: 250px;
       object-fit: cover;
       width: 100%;
+      height: 100%;
+      border-top-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+      @media only screen and (min-width: 768px) {
+        max-height: 350px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 7px;
+      z-index: -10;
+      width: 100%;
+      height: 100%;
+      max-height: 250px;
+      background: #eee;
+      border-top-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
 
       @media only screen and (min-width: 768px) {
         max-height: 350px;

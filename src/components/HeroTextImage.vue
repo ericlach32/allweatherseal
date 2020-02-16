@@ -32,7 +32,7 @@ export default {
       max-height: 500px;
       width: 50%;
       object-fit: cover;
-      border-bottom-right-radius: 4%;
+      border-bottom-right-radius: 1rem;
 
       @media only screen and (max-width: 768px) {
         max-height: 250px;
@@ -46,10 +46,10 @@ export default {
       z-index: -10;
       width: 50%;
       height: 100%;
-      top: 12px;
-      left: -24px;
-      background: #bbb;
-      border-bottom-right-radius: 4%;
+      top: 7px;
+      left: -14px;
+      background: #eee;
+      border-bottom-right-radius: 1rem;
 
       @media only screen and (max-width: 768px) {
         display: none;
