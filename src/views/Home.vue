@@ -63,14 +63,14 @@ export default {
 <style lang="scss" scoped>
 h3 {
   margin-top: 4rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
 
   @media only screen and (max-width: 768px) {
-    text-align: left;
-
-    margin-top: 1rem;
-    margin-bottom: 0;
+    font-size: 1.75rem;
+    margin: 3rem 0;
   }
 }
 </style>

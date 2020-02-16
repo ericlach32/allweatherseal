@@ -91,7 +91,7 @@ export default {
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1.23s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: opacity .74s cubic-bezier(0.215, 0.610, 0.355, 1);
     z-index: 1000;
 
     &.active {

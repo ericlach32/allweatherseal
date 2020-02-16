@@ -45,13 +45,29 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Bebas+Neue|Heebo&display=swap');
+
 body {
   margin: 0;
   background: #444;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h3 {
   color: #fff;
+  font-family: 'Bebas Neue', 'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h2, h4, h5 {
+  color: #fff;
+  font-family: 'Archivo Black',  'Avenir', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 130%;
+}
+
+p {
+  color: #fff;
+  font-family: 'Heebo', 'Avenir', Helvetica, Arial, sans-serif;
 }
 
 h1 {

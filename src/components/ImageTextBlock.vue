@@ -72,7 +72,7 @@ export default {
     }
 
     p {
-      font-size: 1.15rem;
+      font-size: 1.47rem;
     }
   }
 
