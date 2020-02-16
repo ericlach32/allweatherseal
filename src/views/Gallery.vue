@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery">
+  <div class="gallery" data-gallery>
     <h1>Gallery</h1>
     <div class="gallery__wrapper">
       <div v-for="(gallery_image, key) in gallery_images" v-bind:key='key' class="gallery__image">
@@ -48,9 +48,11 @@ export default {
       wrapper.classList.add("active");
       wrapper.querySelector("img").setAttribute("src", e.target.src);
       document.querySelector("body").style.overflowY = 'hidden';
+      this.addListener();
     },
     addListener() {
-      document.addEventListener("click", (e) => {
+      let page = document.querySelector('[data-gallery]');
+      page.addEventListener("click", (e) => {
         if(!e.target.classList.contains('gallery-image__image')) {
           document.querySelector('[data-gallery-popup]').classList.remove("active");
           document.querySelector("body").style.overflowY = 'scroll';
@@ -62,7 +64,6 @@ export default {
   },
   created () {
     this.getContent()
-    this.addListener()
   }
 }
 </script>
