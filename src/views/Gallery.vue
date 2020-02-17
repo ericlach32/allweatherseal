@@ -17,17 +17,20 @@
       <img src="https://placehold.it/1080x1080.jpg" alt="">
       <span class="gallery-popup__close">&times;</span>
     </div>
+    <Footer/>
   </div>
 </template>
 
 
 <script>
 import GalleryImage from '@/components/GalleryImage.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'gallery',
   components: {
-    GalleryImage
+    GalleryImage,
+    Footer
   },
   data () {
     return {
@@ -124,6 +127,10 @@ export default {
       max-height: 77%;
       max-width: 100%;
       object-fit: cover;
+
+      &::hover {
+        cursor: pointer;
+      }
     }
   }
 </style>

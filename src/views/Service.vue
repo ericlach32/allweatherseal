@@ -5,16 +5,19 @@
       v-bind:heading='service_page.data.heading[0].text'
       v-bind:image='service_page.data.hero_image.url'
     />
+    <Footer/>
   </div>
 </template>
 
 <script>
 import HeroTextImage from '@/components/HeroTextImage.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'service',
   components: {
-    HeroTextImage
+    HeroTextImage,
+    Footer
   },
   data () {
     return {

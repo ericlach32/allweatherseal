@@ -25,6 +25,8 @@
 
     </div>
 
+    <Footer/>
+
   </div>
 </template>
 
@@ -32,12 +34,14 @@
 // @ is an alias to /src
 import HeroBackground from '@/components/HeroBackground.vue'
 import ImageTextBlock from '@/components/ImageTextBlock.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'home',
   components: {
     HeroBackground,
-    ImageTextBlock
+    ImageTextBlock,
+    Footer
   },
   data () {
     return {

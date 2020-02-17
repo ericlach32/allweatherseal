@@ -2,13 +2,18 @@
   <div class="contact" v-if="contact_page">
     <h1>{{ contact_page.data.title[0].text }}</h1>
     <h2>{{ contact_page.data.heading[0].text }}</h2>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue'
+
 export default {
   name: 'contact',
-  components: {},
+  components: {
+    Footer
+  },
   data () {
     return {
       contact_page: null
@@ -31,8 +36,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.contact {
-  margin-bottom: 25rem;
+.footer {
+  margin-top: 25rem;
 }
 </style>
 
